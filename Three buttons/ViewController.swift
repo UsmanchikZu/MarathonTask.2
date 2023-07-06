@@ -14,7 +14,6 @@ class ViewController: UIViewController {
         
         var oneButton = UIButton(configuration: .filled())
         oneButton.setTitle("First Botton", for: .normal)
-        oneButton.setTitleColor(UIColor.systemGray3, for: .normal)
         oneButton.setImage(UIImage(systemName: "arrow.forward.circle.fill"), for: .normal)
         oneButton.semanticContentAttribute = .forceRightToLeft
         
@@ -28,12 +27,9 @@ class ViewController: UIViewController {
         oneButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -350).isActive = true
         oneButton.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
         oneButton.translatesAutoresizingMaskIntoConstraints = false
-        oneButton.widthAnchor.constraint(equalToConstant: 250).isActive = true
-        oneButton.heightAnchor.constraint(equalToConstant: 40).isActive = true
         
         let twoButton = UIButton(configuration: .filled())
         twoButton.setTitle("Second Medium Button", for: .normal)
-        twoButton.setTitleColor(UIColor.systemGray3, for: .normal)
         twoButton.setImage(UIImage(systemName: "arrow.forward.circle.fill"), for: .normal)
         twoButton.semanticContentAttribute = .forceRightToLeft
 
@@ -46,28 +42,23 @@ class ViewController: UIViewController {
         twoButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -300).isActive = true
         twoButton.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
         twoButton.translatesAutoresizingMaskIntoConstraints = false
-        twoButton.widthAnchor.constraint(equalToConstant: 300).isActive = true
-        twoButton.heightAnchor.constraint(equalToConstant: 40).isActive = true
         twoButton.addTarget(self, action: #selector(secondButton), for: .touchUpInside)
         
-        let thirdButton = UIButton(configuration: .filled())
-        thirdButton.setTitle("Second Medium Button", for: .normal)
-        thirdButton.setTitleColor(UIColor.systemGray3, for: .normal)
-        thirdButton.setImage(UIImage(systemName: "arrow.forward.circle.fill"), for: .normal)
-        thirdButton.semanticContentAttribute = .forceRightToLeft
+        let threeButton = UIButton(configuration: .filled())
+        threeButton.setTitle("Second Medium Button", for: .normal)
+        threeButton.setImage(UIImage(systemName: "arrow.forward.circle.fill"), for: .normal)
+        threeButton.semanticContentAttribute = .forceRightToLeft
         
-        thirdButton.configuration?.titlePadding = 8
-        thirdButton.configuration?.imagePadding = 8
-        thirdButton.configuration?.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 14, bottom: 10, trailing: 14)
+        threeButton.configuration?.titlePadding = 8
+        threeButton.configuration?.imagePadding = 8
+        threeButton.configuration?.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 14, bottom: 10, trailing: 14)
 
-        view.addSubview(thirdButton)
+        view.addSubview(threeButton)
         
-        thirdButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -250).isActive = true
-        thirdButton.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
-        thirdButton.translatesAutoresizingMaskIntoConstraints = false
-        thirdButton.widthAnchor.constraint(equalToConstant: 250).isActive = true
-        thirdButton.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        thirdButton.addTarget(self, action: #selector(thirdButton), for: .touchUpInside)
+        threeButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -250).isActive = true
+        threeButton.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
+        threeButton.translatesAutoresizingMaskIntoConstraints = false
+        threeButton.addTarget(self, action: #selector(thirdButton), for: .touchUpInside)
         
     }
 
